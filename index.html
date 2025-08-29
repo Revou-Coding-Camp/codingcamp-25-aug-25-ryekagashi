@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS EXTERNAL -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- CSS Tailwind-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+</head>
+<body>
+    <!-- Header Content -->
+    <header class="header-nav py-[8px] px-[4px]">
+    <!-- Icon Content -->
+    <div class="logo">
+
+    </div> 
+
+    <!-- Navbar Content -->
+    <nav class="flex">
+        <a href="#home" class="border p-[5px]">Home</a>
+        <a href="#profile" class="border p-[5px]">Profile</a>
+        <a href="#portofolio" class="border p-[5px]">Potofolio Project</a>
+        <a href="#message" class="border p-[5px]">Message Us</a>
+    </nav>
+
+    </header>
+<hr />
+    <!-- Main Content -->
+    <main>
+
+        <!-- Home-->
+         <section id="home" class="min-h-[500px]">
+            <header>
+                <h2 class="text-center text-[24px] font-bold py-[16px]">
+                    Selamat Datang <span id="username"></span> Di Websiteku
+                </h2>
+            </header>
+         </section>
+
+        <!-- Profile-->
+         <section id="profile" class="min-h-[500px]">
+            <header>
+                <h2 class="text-center text-[24px] font-bold py-[16px]">
+                    Our Profile
+                </h2>
+            </header>
+         </section>
+
+        <!-- Portofolio-->
+         <section id="portofolio" class="min-h-[500px]">
+            <header>
+                <h2 class="text-center text-[24px] font-bold py-[16px]">
+                    Sedikit Potofolioku
+                </h2>
+            </header>
+         </section>
+
+        <!-- Message-->
+         <section id="message" class="min-h-[500px]">
+            <header>
+                <h2 class="text-center text-[24px] font-bold py-[16px]">
+                    Pesan
+                </h2>
+            </header>
+            <form>
+                <form class="flex px-[16px]">
+                    <label for="nama" class="block py-[8px]">Nama :</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan Nama Anda" /><br /><br />
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" placeholder="Masukkan Email Anda" /><br /><br />
+                    <label for="pesan">Pesan :</label>
+                    <textarea id="pesan" name="pesan" placeholder="Tulis Pesan Anda"></textarea><br /><br />
+                    <button type="submit" class="border p-[8px] bg-blue-500 text-white rounded">Kirim Pesan</button>
+            </form>
+         </section>
+    </main>
+
+    <!-- Footer Content -->
+    <footer class="text-center">
+        <p>&copy; 2025 Ryekagashi, All right reserved Create By Reyhan</p>
+    </footer>
+
+    <!-- Javascript EXTERNAL -->
+     <script src="js/script.js"></script>
+</body>
+</html>

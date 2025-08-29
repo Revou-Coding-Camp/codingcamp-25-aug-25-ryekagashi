@@ -1,0 +1,15 @@
+.logo{
+height: 50px;
+width: 50px;
+background-color: indigo;
+background-image: url(/images/rascal.png);
+background-size: cover;
+background-position: center;
+border-radius: 50%;
+}
+
+.header-nav{
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-between;
+}
