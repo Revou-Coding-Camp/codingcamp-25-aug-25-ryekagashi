@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mini-Project Reyhan Valens Yoga Permana</title>
 
     <!-- CSS EXTERNAL -->
     <link rel="stylesheet" href="css/style.css">
@@ -13,6 +13,24 @@
     
 </head>
 <body>
+        <!-- Epic Neural Background -->
+    <div class="neural-background"></div>
+    
+    <!-- Floating Geometric Shapes -->
+    <div class="geometric-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <!-- Neural Network Lines -->
+    <div class="neural-lines">
+        <div class="neural-line"></div>
+        <div class="neural-line"></div>
+        <div class="neural-line"></div>
+    </div>
+
     <!-- Header Content -->
     <header class="header-nav py-[8px] px-[4px]">
     <!-- Icon Content -->
@@ -36,53 +54,136 @@
         <!-- Home-->
          <section id="home" class="min-h-[500px]">
             <header>
+                <h1 class="section-title">Hallo, <span id="welcomeName"></span>!</h1>
                 <h2 class="text-center text-[24px] font-bold py-[16px]">
-                    Selamat Datang <span id="username"></span> Di Websiteku
+                    Selamat Datang Di Websiteku
                 </h2>
+            <div class="text-center text-[24px] font-regular py-[8px]">
+                <p>This company is engaged in the installation 
+                    <br/>and development of online games, 
+				utilizing AI and ray-tracing technology <br/>to produce the best quality.</p>
+            </div> 
             </header>
          </section>
+
+         <hr />
 
         <!-- Profile-->
          <section id="profile" class="min-h-[500px]">
             <header>
-                <h2 class="text-center text-[24px] font-bold py-[16px]">
-                    Our Profile
-                </h2>
+	        <h2 class="section-title">OUR PROFILE</h2>
+        <div class="timeline-container">
+            <div class="timeline-line"></div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content glass">
+                    <div class="timeline-year">2024 - SEKARANG</div>
+                    <h4>SEBAGAI : ...</h4>
+                    <p>PT. PRIBADI</p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content glass">
+                    <div class="timeline-year">2024 - SEKARANG</div>
+                    <h4>SEBAGAI : ...</h4>
+                    <p>PT. PRIBADI</p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content glass">
+                    <div class="timeline-year">2024 - SEKARANG</div>
+                    <h4>SEBAGAI : ...</h4>
+                    <p>PT. PRIBADI</p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content glass">
+                    <div class="timeline-year">2018 - 2019</div>
+                    <h4>SEBAGAI : ...</h4>
+                    <p>PT. C</p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+        </div>
             </header>
          </section>
+
+         <hr />
 
         <!-- Portofolio-->
          <section id="portofolio" class="min-h-[500px]">
             <header>
-                <h2 class="text-center text-[24px] font-bold py-[16px]">
-                    Sedikit Potofolioku
-                </h2>
+	        <h2 class="section-title">Portofolio</h2>
+            <div class="grid md:grid-cols-3 gap-4">
+                <p class="text-center">
+                <img src="images/ai.jpg" alt="Game MMORPG" class="mb-2 w-full rounded square-2:hover" />
+                Ai Project
+                </p>
+                <p class="text-center">
+                <img src="images/mobile.jpg" alt="Komunitas" class="mb-2 w-full rounded text-center" />
+                Mobile Platform APPS
+                </p>
+                <p class="text-center">
+                <img src="images/web.jpg" alt="Game MMORPG" class="mb-2 w-full rounded text-center" />
+                Website Maintenance
+                </p>
+            </div>
             </header>
          </section>
+
+         <hr />
 
         <!-- Message-->
-         <section id="message" class="min-h-[500px]">
-            <header>
-                <h2 class="text-center text-[24px] font-bold py-[16px]">
-                    Pesan
-                </h2>
-            </header>
-            <form>
-                <form class="flex px-[16px]">
-                    <label for="nama" class="block py-[8px]">Nama :</label>
-                    <input type="text" id="nama" name="nama" placeholder="Masukkan Nama Anda" /><br /><br />
-                    <label for="email">Email :</label>
-                    <input type="email" id="email" name="email" placeholder="Masukkan Email Anda" /><br /><br />
-                    <label for="pesan">Pesan :</label>
-                    <textarea id="pesan" name="pesan" placeholder="Tulis Pesan Anda"></textarea><br /><br />
-                    <button type="submit" class="border p-[8px] bg-blue-500 text-white rounded">Kirim Pesan</button>
+    <section class="contact" id="message">
+	        <h2 class="section-title">MESSAGE US</h2>
+        <div class="contact-container">     
+            <form id="messageForm" class="contact-form glass">
+                <div class="form-group">
+                <label> Nama:
+                    <input type="text" id="name" name="name" placeholder="Tuliskan Namamu" required>
+                </label>
+                </div>
+                <div class="form-group">
+                <label> Tanggal Lahir:
+                <input type="date" id="birthdate" name="birthdate" required class="border px-3 py-2 rounded" />
+                </label>
+                </div>
+                <div class="flex gap-4 text-sm">
+                <label> Jenis Kelamin:
+                    <label><input type="radio" id="gender-male" name="gender" value="Laki-Laki" /> Laki-Laki</label>
+                    <label><input type="radio" id="gender-female" name="gender" value="Perempuan" /> Perempuan</label>
+                </label>
+                </div>
+                <br/>
+                <div class="form-group">
+                <label> Pesan:
+                    <textarea rows="5" id="messagetext" name="messagetext" placeholder="Tuliskan Pesanmu" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">KIRIM</button>
             </form>
-         </section>
+            <div class="contact-form glass" id="infoBox">
+          <div class="mb-2 font-bold">Current Time :</div>
+          <div id="currentTime" class="mb-4">Loading...</div>
+          <div>
+            <b>Nama:</b> - <br />
+            <b>Tanggal Lahir:</b> - <br />
+            <b>Jenis Kelamin:</b> - <br />
+            <b>Pesan:</b> -
+          </div>
+            </div>
+        </div>
+    </section>
     </main>
-
+         <hr />
     <!-- Footer Content -->
-    <footer class="text-center">
-        <p>&copy; 2025 Ryekagashi, All right reserved Create By Reyhan</p>
+    <footer class="text-center border-gray-200">
+        <p>&copy; 2025 Create By Reyhan Valens Yoga Permana, All right reserved</p>
     </footer>
 
     <!-- Javascript EXTERNAL -->
